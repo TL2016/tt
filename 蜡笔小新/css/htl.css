@@ -1,0 +1,590 @@
+body, html {
+	height: 100%;
+}
+.wrap {
+	overflow: hidden;
+	position: relative;
+	min-width: 801px;
+	/*min-height: 524px;*/
+	height: 100%;
+	background: url('../images/bg.png') repeat;
+}
+/*主页的样式部分*/
+.index, .tw-main, .mfb-main, .ax-main {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	padding-top: 7px;
+	width: 801px;
+	height: 517px;
+}
+/*返回主页按钮*/
+.back {
+	position: absolute;
+	top: -119px;
+	left: -100px;
+	width: 206px;
+	height: 206px;
+	background: white;
+	border-radius: 100%;
+	z-index: 9;
+}
+.back span {
+	position: absolute;
+	right: 49px;
+	bottom: 38px;
+	width: 32px;
+	height: 33px;
+	background: url('../images/back.png') no-repeat;
+	cursor: pointer;
+}
+.index {
+	/*display: none;	*/
+}
+.pic, .tit-pic {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	border: 3px solid #fff;
+	border-radius: 100%;
+	box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.6);
+}
+.pic img, .tit-pic img {
+	display: block;
+	width: 150px;
+	height: 150px;
+}
+.white-cir {
+	clear: both;
+	width: 16px;
+	height: 16px;
+	margin: 16px auto 10px;
+	background: white;
+	border-radius: 100%;
+}
+.mesage {
+	width: 361px;
+	margin: 18px auto 0;
+}
+.mesage strong, .mesage span {
+	float: left;
+	height: 47px;
+	line-height: 47px;
+	color: #333;
+}
+.mesage strong {
+	margin-right: 70px;
+	font-size: 36px;
+}
+.mesage span {
+	padding-left: 60px;
+	background: url('../images/ind_star.png') 0 8px no-repeat;
+	font-size: 24px;
+}
+.nav {
+	width: 555px;
+	margin: 61px auto 0;
+}
+.nav div {
+	float: left;
+	margin-right: 60px;
+	cursor: pointer;
+}
+.nav .heart {
+	margin-right: 0;
+}
+.nav div img {
+	width: 145px;
+	height: 145px;
+	border-radius: 10px;
+}
+/*图文样式部分*/
+.tw-main {
+	display: none;
+}
+.tw-left, .tw-right {
+	position: absolute;
+	height: 318px;			
+	background: white;
+}
+.tw-right {
+	right: 0;
+}
+.lef-tit, .rig-tit {
+	height: 49px;
+	border-bottom: 1px solid #ededed;
+	line-height: 49px;	
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;		
+}
+.tw-left {
+	width: 306px;
+	border-radius: 10px;
+}
+.lef-tit {
+	padding-left: 18px;			
+}
+.lef-con {
+	padding: 7px 8px 12px;
+	text-align: center;
+}
+.xmbt, .lef-e, .lef-s, .lef-last {
+	float: left;
+	width: 143px;
+	height: 102px;
+	padding-top: 16px;
+	cursor: pointer;
+}
+.xmbt {
+	border-right: 1px dotted #d9d9d9;
+}
+.lef-last {
+	border-left: 1px dotted #d9d9d9;
+	border-top: 1px dotted #d9d9d9;			
+}
+.lef-s {
+	border-top: 1px dotted #d9d9d9;
+}
+.lef-con em, .lef-con strong {
+	line-height: 68px;
+	font-size: 36px;
+}
+.lef-con em {
+	color: #00b000;
+}
+.lef-con strong {
+	color: #f00;
+}
+.lef-con span {
+	line-height: 24px;
+	font-size: 18px;
+}
+	/*图文右边部分*/
+.tw-right {
+	width: 480px;
+}
+.rig-tit {
+	padding-right: 20px;
+	text-align: right;
+}
+.rig-con {
+	position: relative;
+	padding: 7px 16px 11px 14px;
+}
+.rig-t div, .rig-b div {
+	float: left;
+	width: 145px;
+	height: 126px;
+	cursor: pointer;
+}
+.dw {
+	border-bottom: 1px dotted #d9d9d9;			
+	background: url('../images/logo_08.png') center 22px no-repeat;
+}
+.wrap .ppt {
+	width: 158px;
+	border: 1px dotted #d9d9d9;
+	border-top: 0;
+	background: url('../images/logo_23.png') center no-repeat;
+}
+.zz {
+	background: url('../images/logo_05.png') center no-repeat;
+	border-bottom: 1px dotted #d9d9d9;
+}
+.tb {
+	background: url('../images/logo_15.png') center no-repeat;
+}
+.wrap .bq {
+	width: 158px;
+	border-left: 1px dotted #d9d9d9;
+	border-right: 1px dotted #d9d9d9;
+	background: url('../images/logo_39.png') center no-repeat;
+}
+.tp {
+	background: url('../images/logo_31.png') center no-repeat;
+}
+	/*点击弹出对话框*/
+	/*定位按钮点击*/
+.rig-con .dw-c, .rig-con .ppt-c,
+.rig-con .zz-c, .rig-b .tb-c,
+.rig-b .bq-c, .rig-b .tp-c {
+	position: absolute;
+	background: #ddd;
+}
+.rig-con .dw-c, .rig-con .zz-c,
+.rig-b .tb-c, .rig-b .tp-c {
+	top: 5px;
+	width: 315px;
+	height: 258px;
+}
+.rig-con .dw-c {	
+	left: 159px;	
+}
+.rig-con .dw-c div {
+	float: none;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	cursor: default;
+}
+.rig-con .dw-c {
+	display: none;
+	font-size: 14px;
+	color: #aaa;
+	text-align: center;
+	cursor: default;
+}
+.dw-c em {
+	font-size: 20px;
+	color: skyblue;
+}
+.dw-c p {
+	line-height: 36px;
+	text-align: center;
+}
+.dw-c-p {
+	margin-top: 20px;
+}
+.rig-con .dw-c .dw-del, .rig-con .ppt-del,
+.rig-con .zz-c .zz-del, .rig-b .tb-del,
+ .rig-b .bq-del, .rig-b .tp-del {
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	z-index: 9;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 24px;
+	cursor: pointer;
+}
+	/*ppt按钮点击*/
+.rig-con .ppt-c, .rig-b .bq-c {
+	display: none;
+	left: 5px;
+	top: 134px;
+	width: 437px;
+	height: 110px;
+	padding: 10px 25px 10px 10px;
+}
+.ppt-c dt, .ppt-c dd {
+	float: left;
+}
+.ppt-c dt {
+	overflow: hidden;
+	width: 120px;
+	height: 110px;
+	border-radius: 100%;
+}
+.ppt-c dd {
+	width: 306px;
+	padding-left: 8px;
+}
+.ppt-c dt img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.ppt-c dd h3 {
+	line-height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.ppt-c dd p {
+	color: #999;
+}
+
+	/*纸张按钮的制作*/
+.rig-con .zz-c {
+	display: none;
+	left: 4px;
+	width: 295px;
+	height: 243px;
+	padding: 15px 10px 0 10px;
+	color: #999;
+}
+.rig-con .zz-c div {
+	width: 100%;
+	height: 94px;
+	text-align: center;
+}
+.rig-con .zz-c em {
+	line-height: 40px;
+	font-size: 26px;
+	color: skyblue;
+}
+.rig-con .zz-c p {
+	margin-top: 10px;
+}
+	/*图标按钮*/
+.rig-b .tb-c {
+	display: none;
+	right: 8px;
+}
+	/*标签按钮*/
+.rig-b .bq-c {
+	display: block;
+	display: none;
+	top: 4px;	
+	color: #999;
+	font-size: 12px;
+}
+.bq-c em {
+	display: block;
+	font-size: 20px;
+	text-align: center;
+	color: skyblue;
+}
+	/*图片*/
+.rig-b .tp-c {
+	display: none;
+	background: white;
+}
+.tp-c-pic img, .rig-b .tp-c-pic {
+	width: 100%;
+	height: 100%;
+}
+.rig-b .tp-c-pic {
+	overflow: hidden;
+	border-radius: 10px;
+}
+.tp-c-pic img {
+	display: block;	
+}
+.rig-b .tb-del {
+	display: none;
+	top: 6px;
+	right: 8px;
+}
+
+
+   /*三角形的处理*/
+.dw-c:after, .ppt-c:after, .zz-c:after,
+.tb-c:after, .bq-c:after, .tp-c:after {
+	content: "";
+	position: absolute;	
+	/*border: 1px solid purple;*/
+	background: #ddd;
+	width: 24px;
+	height: 24px;
+	transform: rotateZ(50deg);
+}
+.dw-c:after {
+	top: 34px;
+	left: -8px;
+}
+.ppt-c:after {
+	top: -8px;
+	left: 50%;	
+	margin-left: -12px;
+}
+.zz-c:after {
+	right: -8px;
+	top: 52px;
+}
+.tb-c:after {
+	bottom: 50px;
+	left: -8px;
+}
+.bq-c:after {
+	bottom: -8px;
+	left: 50%;
+	margin-left: -12px;
+}
+.tp-c:after {
+	bottom: 50px;
+	right: -7px;
+	background: #6d91ec;
+}
+
+	/*鼠标移入效果*/
+.dw:hover {
+	background: url('../images/logo_09.png') center no-repeat;
+}
+.ppt:hover {
+	background: url('../images/logo_20.png') center no-repeat;
+}
+.zz:hover {
+	background: url('../images/logo_03.png') center no-repeat;
+}
+.tb:hover {
+	background: url('../images/logo_13.png') center no-repeat;
+}
+.bq:hover {
+	background: url('../images/logo_36.png') center no-repeat;
+}
+.tp:hover {
+	background: url('../images/logo_28.png') center no-repeat;
+}
+/*魔法棒的样式*/
+.mfb-main {
+	display: none;
+}
+.mfb-t {
+	position: relative;
+	height: 145px;
+}
+.mfb-t .far, .mfb-b .far {
+	position: absolute;	
+	cursor: pointer;
+}
+.mfb-b .far {
+	margin-top: 19px;
+}
+.mfb-con p, .t-pic, .b-pic {
+	float: left;
+}
+.t-pic, .b-pic {
+	position: relative;
+	width: 145px;
+	height: 145px;
+	border-radius: 10px;
+}
+.t-pic img, .b-pic img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+	/*块里面的圆图片*/
+.yl, .hov {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto; 
+	width: 120px;
+	height: 120px;
+	border-radius: 100%
+}
+.mfb-con .hov {
+	display: none;
+}
+.mfb-con p {
+	overflow: hidden;
+	display: none;
+	width: 0;
+	height: 131px;
+	padding: 14px 0 0 5px;
+	line-height: 18px;
+	font-size: 12px;
+}
+	/*块的颜色*/
+.one {
+	background: #f4b030;
+}
+.two {
+	background: #1e8345;
+}
+.three {
+	background: #e75d1c;
+}
+.four {
+	background: #ef669f;
+}
+.five {
+	background: #7c7546;
+}
+.six {
+	background: #64cae9;
+}
+.seven {
+	background: #eeff61;
+}
+.eight {
+	background: #6d91ec;
+}
+
+/*爱心样式*/
+.ax-main {	
+	display: none;
+}
+.ax-lef {
+	float: left;
+	width: 306px;
+	height: 288px;
+	padding-top: 30px;
+	background: white;
+	text-align: center;
+}
+.music-head strong, .music-head span {
+	float: left;
+	text-align: center;
+}
+.music-head strong {
+	display: inline;
+	margin-left: 110px;
+	line-height: 36px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #418edc;
+}
+.music-head span {
+	width: 23px;
+	height: 30px;
+	margin-top: 4px;
+	margin-left: 54px;
+	margin: 4px 0 0 54px;
+	background: url('../images/play.png') no-repeat;
+	cursor: pointer;
+}
+.music-con {
+	position: relative;
+	overflow: hidden;
+	height: 192px;
+	padding: 0 38px;
+	margin-top: 12px;
+	line-height: 24px;
+	font-size: 14px;
+	color: ##91b5d9;
+}
+.ax-rig {
+	float: right;
+	width: 433px;
+	height: 297px;
+	padding: 21px 25px 0 22px;
+	background: white;
+}
+.ax-rig p, .write, .write-tiem {
+	color: #000;	
+}
+.write, .write-time {
+	line-height: 36px;
+	text-align: right;		
+}
+.ax-rig p{
+	float: right;
+	height: 192px;
+	margin-bottom: 14px;
+	line-height: 24px;
+	font-size: 14px;
+}
+.music-con .gc {
+	position: absolute;
+	top: 0px;
+	height: 2110px;	
+	border: 0;
+	text-align: center;
+	resize: none;
+}
+.music-con .gc p {
+	width: 230px;
+	margin: 0 auto;
+	text-align: center;
+}
+p.select {
+	font-size: 18px;
+	color: skyblue;
+}
+.write {
+	font-size: 24px;
+}
+.wirte-time {
+	font-size: 18px;
+}
+
